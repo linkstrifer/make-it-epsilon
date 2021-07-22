@@ -12,8 +12,8 @@ mongoose.connect('mongodb://localhost:27017/mydatabase', {
     useNewUrlParser: true ,
 })
 
-mongoose.connection.once("open", () => console.log("Mongoose conectado"));
-mongoose.connection.on("error", (error) => console.log(error));
+mongoose.connection.once("open", () => console.log("Mongoose conectado"))
+mongoose.connection.on("error", (error) => console.log(error))
 
 const UserSchema = mongoose.Schema({      
     name: String,  
@@ -35,13 +35,18 @@ app.use( cookieSession({
 
 app.post('/register', async (request, response) => {
     const {name, last, email, password} = request.body
-        try { 
-            await UserModel.create({ name, last, email, password : await bcrypt.hash(password, 10)})
-            response.json({ created: true })
-        }   catch (error) {
-            response.status(500).json({ error })}
-            
-    })
+    try { 
+        await UserModel.create({ 
+            name, 
+            last, 
+            email, 
+            password : await bcrypt.hash(password, 10)
+        })
+        response.json({ created: true })
+    } catch (error) {
+        response.status(500).json({ error })
+    }
+})
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
