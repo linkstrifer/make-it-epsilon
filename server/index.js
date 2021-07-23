@@ -48,6 +48,30 @@ app.post('/register', async (request, response) => {
     }
 })
 
+app.post('/login', async (request, response) => {
+    const { email, password } = request.body
+    if(!password){
+        response.status(400).json({ error : "missing password"})
+        return
+    }
+    try {
+        if (email){
+            const user = await UserModel.findOne({email})
+            const passwordValid = await bcrypt.compare(password, user.password)
+            if (passwordValid){
+                response.json({ logged: true })
+            } else {
+                response.json({ logged: false })
+            }
+        } else {
+            response.status(400).json({ error : "missing email"})
+        }
+    }
+    catch (error) {
+        response.status(500).json({ error })
+    }
+})
+
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
 })
