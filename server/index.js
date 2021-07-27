@@ -75,8 +75,7 @@ app.get("/logout", (request, response) => {
     try {
         request.session.userId = null
         response.json({ loggedOut: true })
-    }
-    catch (error){
+    } catch (error){
         response.status(400).json({ error: " LoggedOut Error" })
     }
 })
