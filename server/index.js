@@ -80,6 +80,10 @@ app.get("/logout", (request, response) => {
     }
 })
 
+app.post("/post", (request, response) => {
+    if passwordValid = true
+})
+
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
 })
