@@ -71,7 +71,7 @@ app.post("/login", async (request, response) => {
     }
 })
 
-app.get("/logout", (request, response) => {
+app.post("/logout", (request, response) => {
     try {
         request.session.userId = null
         response.json({ loggedOut: true })
