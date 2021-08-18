@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import { RiSearchLine, RiHome2Line, RiNotification2Line, RiLogoutBoxRLine } from "react-icons/ri";
 import { BsGear } from "react-icons/bs";
 
-
 function Header (){
     const [show, setShow] = useState(false);
     return ( 
