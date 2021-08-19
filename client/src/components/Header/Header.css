@@ -66,8 +66,7 @@
 }
 
 .userMenu{
-    border-color: #3C3C3C;
-    border-top: solid 1px;
+    border-top: solid 1px #3C3C3C;
     color: white;
     display: flex;
     padding: 12px;
@@ -120,7 +119,6 @@
     .user{
         border-top: solid 1px;
         border-color: #3C3C3C;
-        
     }
 
     .userMenu{
