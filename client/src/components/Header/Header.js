@@ -44,9 +44,10 @@ function Header (){
                 </div>
                 )}
             </a>
-            
         </div>
-    </div>);
+    </div>
+    
+    );
 }
 export default Header;
 

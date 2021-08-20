@@ -1,12 +1,19 @@
+body {
+    margin-left: 65px;
+}
+
 .header {
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
+    font-family: "Poppins";
     height: 100vh;
     justify-content: space-between;
+    left: 0;
+    position: fixed;
+    top: 0;
     width: 65px;
-    font-family: "Poppins";
 }
 
 .superior,
@@ -65,7 +72,7 @@
     text-decoration: none;
 }
 
-.userMenu{
+.userMenu {
     border-top: solid 1px #3C3C3C;
     color: white;
     display: flex;
@@ -73,18 +80,19 @@
     text-decoration: none;
 }
 
-.userMenu .icono{
+.userMenu .icono {
     margin-right: 14px;
 }
 
-.userName{
+.userName {
     color: #78A1B6;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
     
-    #body{
-        background-color:rgba(0, 0, 0, 0.7)
+    body {
+        margin-left: 0;
+        margin-top: 50px;
     }
     
     .header{
@@ -94,7 +102,7 @@
     }
 
     .superior,
-    .inferior{
+    .inferior {
         flex-direction: row;
     }
 
