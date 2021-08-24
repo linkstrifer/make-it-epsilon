@@ -1,0 +1,140 @@
+body {
+    margin-left: 65px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    height: 100vh;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 65px;
+}
+
+.superior,
+.inferior {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.header-menu{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 14px 15px;
+}
+
+.icono {
+    color: white;
+    font-size: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-menu{
+    background-color: #000000;
+    border-radius: 8px;
+    bottom: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    left: 73px;
+    line-height: 1.5;
+    position: absolute;
+    width: 320px;
+}
+
+.user{
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.userMenu {
+    border-top: solid 1px #3C3C3C;
+    color: white;
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.userMenu .icono {
+    margin-right: 14px;
+}
+
+.userName {
+    color: #78A1B6;
+}
+
+@media (max-width: 768px) {
+    
+    body {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    
+    .header{
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+    }
+
+    .superior,
+    .inferior {
+        flex-direction: row;
+    }
+
+    .logo{
+        padding: 13px 10px 13px 16px; 
+    }
+
+    .header-menu{
+        justify-content: right;
+        padding: 10px;
+    }
+
+    .avatar-menu{
+        border-radius: 0 0 8px 8px;
+        bottom: auto;
+        left: 0px;
+        text-align: right;
+        top: 50px;
+        width: 100vw;
+    }
+
+    .user{
+        border-top: solid 1px;
+        border-color: #3C3C3C;
+    }
+
+    .userMenu{
+        flex-direction: row-reverse;
+    }
+
+    .userMenu .icono{
+        margin-left: 14px;
+        margin-right: 0;
+    }
+}

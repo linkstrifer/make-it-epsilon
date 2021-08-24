@@ -71,13 +71,17 @@ app.post("/login", async (request, response) => {
     }
 })
 
-app.get("/logout", (request, response) => {
+app.post("/logout", (request, response) => {
     try {
         request.session.userId = null
         response.json({ loggedOut: true })
     } catch (error){
         response.status(400).json({ error: " LoggedOut Error" })
     }
+})
+
+app.post("/post", (request, response) => {
+    if passwordValid = true
 })
 
 app.listen(PORT, () => {
