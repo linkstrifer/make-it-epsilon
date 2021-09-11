@@ -1,12 +1,22 @@
 import './App.css';
 import Header from './components/Header/Header.js';
-import Post from './components/Post/Post.js'
+import Posts from './components/Posts/Posts.js';
+import PostButton from './components/PostButton/PostButton.js';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Post/>
+      <Posts/>
+      <Posts/>
+      <Posts/>
+      <Posts/>
+      <Posts/>
+      <Posts/>
+      <Posts/>
+      <Posts/>
+      <PostButton/>
+      
     </div>
   );
 }
