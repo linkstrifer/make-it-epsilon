@@ -6,7 +6,7 @@ function Post (){
         <div className="post">
             <div className="post-owner">
                 <img src="https://via.placeholder.com/60"/> 
-                <div className="post-owner-info"><span className="owner"> July Braum </span> <br/>
+                <div className="post-owner-info"><span className="owner"> July Bum </span> <br/>
                     <span className="date"> Dec. 3 2021 </span> </div>
             </div>
 
