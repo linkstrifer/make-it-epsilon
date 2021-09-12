@@ -1,4 +1,6 @@
-import { BiPlus } from "react-icons/bi";
+import { useState } from 'react'
+import { BiPlus } from 'react-icons/bi';
+import ComboBox from "../ComboBox/ComboBox.js";
 import './PostButton.css';
 
 function PostButton (){
