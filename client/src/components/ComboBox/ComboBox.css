@@ -27,6 +27,17 @@ header {
     color: #78A1B6;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+}
+.headerLeft{
+    background-color: rgb(55, 0, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.headerRight{
+    background-color: chartreuse;
 }
 
 .tweetImg {
@@ -44,7 +55,8 @@ p{
 
 .closeIcon{
     margin-top:10px;
-    margin-left: 210px;
+    background-color: white;
+    border:none;
 }
 
 .tweetText{
@@ -118,13 +130,6 @@ p{
         font-size: 12px;
         font-weight: 500;
         margin-top: 20px;
-    }
-
-    /FIXME:
-    .closeIcon{
-        margin-top:10px;
-        margin-right: 10px;
-        margin-left: 0px;
     }
 
     .tweetText{

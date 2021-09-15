@@ -7,9 +7,14 @@ function ComboBox (){
     <div className="overlay">   
         <div className="container">
             <header className="comboBox">
-                <img className="tweetImg" src="https://via.placeholder.com/50"/>
-                <p>¿Qué estás pensando?</p>
-                <span className="closeIcon"> <AiOutlineClose/></span>
+                <div className="headerLeft">
+                    <img className="tweetImg" src="https://via.placeholder.com/50"/>
+                    <p>¿Qué estás pensando?</p>
+                </div>
+                
+                <div className="headerRight">
+                    <button className="closeIcon"> <AiOutlineClose/> </button>
+                </div>
             </header>
 
             <textarea className="tweetText" maxLength="200" dir="ltr" name="tweet" required="true" />
