@@ -13,7 +13,7 @@ function ComboBox (){
                 </div>
                 
                 <div className="headerRight">
-                    <button className="closeIcon"> <AiOutlineClose/> </button>
+                    <button value="close_window" className="closeIcon"> <AiOutlineClose/> </button>
                 </div>
             </header>
 
@@ -21,11 +21,11 @@ function ComboBox (){
 
             <footer className="comboBox-footer">
                 <div className="tweetIcons">
-                <a href="picture"> 
-                    <AiOutlinePicture className="pictureIcon"/> 
+                <a href="picture" className="pictureIcon tweetIcons"> 
+                    <AiOutlinePicture /> 
                 </a>
-                <a href="emoji"> 
-                    <BiHappy className="emoji"/> 
+                <a href="emoji" className="emojiIcon tweetIcons"> 
+                    <BiHappy/> 
                 </a>
                 </div>
 
