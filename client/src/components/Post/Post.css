@@ -1,0 +1,61 @@
+.post {
+    border: solid 1px #DAEAF2;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: "Poppins";
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.post-owner {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-owner img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 0;
+    overflow: hidden;
+    margin: 13px;
+}
+
+.post-owner-info {
+    margin-top: 23px;
+}
+
+.owner {
+    color:#000000;
+}
+
+.date {
+    font-size: 9px;
+    color:#90A4A8;
+}
+
+.post-text {
+    color: #696969;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.post-actions-container {
+    display: flex;
+    flex-direction: row;
+    color:#78A1B6;
+    justify-content: flex-end;
+}
+
+.post-actions {
+    margin: 18px 16px 18px 1px;
+}
+
+.post-action-icon {
+    font-size: 15px;
+}
+
+.post-action-number {
+    margin-left: 5px ;
+}
